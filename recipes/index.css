@@ -3,6 +3,7 @@
 body{margin:0;padding:0;min-height:100dvh}
 h1,h2,h3,h4,h5,ul{margin:0;padding:0}
 li{list-style:none}
+img{height:auto;max-width:100%}
 input[type="checkbox"]{position:absolute;opacity:0}
 header{position:relative;background-color:transparent;position:sticky;top:0;animation:nav-bar-movement both;animation-timeline:scroll();animation-range:10px 80px}
 .nav-bar{min-height:6em;padding:0 25px;}
@@ -53,5 +54,5 @@ header{position:relative;background-color:transparent;position:sticky;top:0;anim
 
 /* MAIN */
 main{margin: 0 7em;}
-.background-image{position: relative;top: 0;z-index: -2;margin: 0;}
+.background-image{position: relative;top: 0;z-index: -2;margin: 0;min-height:100dvh}
 .background-image img{max-width: 100%;height: auto;aspect-ratio: 16/9;}
