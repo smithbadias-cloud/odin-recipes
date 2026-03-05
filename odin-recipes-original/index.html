@@ -3,9 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recetas de Odin</title>
+    <title>Recetas</title>
+    <meta name="description" content="Página web de recetas">
+    <link rel="shortcut icon" href="recipies/image/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    
+    <header class="header">
+        <nav class="navbar">
+            <div class="navbar__container">
+                <img class="navbar__logo" src="recipies/image/logo.ico" alt="logo">
+            </div>
+            <ul class="navbar__list">
+                <li class="navbar__item">
+                    <a class="navbar__link" href="recipies/arroz-con-vegetales-al-vapor.html">
+                        <span class="navbar__text">Arroz con Vegetales</span>
+                        <span class="navbar__text">al Vapor</span>
+                    </a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="recipies/arroz-cremoso-de-hongos-y-pollo.html">
+                        <span class="navbar__text">Arroz Cremoso</span>
+                        <span class="navbar__text">de Hongos y Pollo</span>
+                    </a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="recipies/pasta-con-queso-y-hongos.html">
+                        <span class="navbar__text">Pasta con Queso</span>
+                        <span class="navbar__text">y Hongos</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <article class="hero">
+            <div class="hero__container">
+                <h1 class="hero__title">Recetas de Odin</h1>
+                <p class="hero__text">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga ad fugit magnam laborum ipsum deleniti fugiat modi et cupiditate molestias suscipit ut a laboriosam quod, ea minima beatae expedita soluta.
+                </p>
+                <button class="hero__button">Sign up</button>
+            </div>
+            <div class="hero__media">
+                <img class="hero__image" src="recipies/image/lasagna.webp" alt="recetas">
+            </div>
+        </article>
+    </header>
+    <main class="main">
+        <!-- SECCIÓN INFO -->
+        <section class="info">
+            <h2 class="info__title">Informacion aleatoria</h2>
+            <div class="info__grid">
+                <article class="info__card">
+                    <div class="info__image-box">
+                        <img class="info__image" src="recipies/image/lasagna.webp" alt="">
+                    </div>
+                    <p class="info__text">
+                        Lorem ipsum dolor sit. 
+                    </p>
+                </article>
+                <article class="info__card">
+                    <div class="info__image-box">
+                        <img class="info__image" src="recipies/image/lasagna.webp" alt="">
+                    </div>
+                    <p class="info__text">
+                        Lorem ipsum dolor sit. 
+                    </p>
+                </article>
+                <article class="info__card">
+                    <div class="info__image-box">
+                        <img class="info__image" src="recipies/image/lasagna.webp" alt="">
+                    </div>
+                    <p class="info__text">
+                        Lorem ipsum dolor sit. 
+                    </p>
+                </article>
+                <article class="info__card">
+                    <div class="info__image-box">
+                        <img class="info__image" src="recipies/image/lasagna.webp" alt="">
+                    </div>
+                    <p class="info__text">
+                        Lorem ipsum dolor sit. 
+                    </p>
+                </article>
+            </div>
+        </section>
+        <!-- SECCIÓN CITA -->
+        <section class="quote">
+            <p class="quote__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione ex laborum dolorem tempore? Cumque illum nisi aperiam? Ut eveniet libero deserunt ipsam eius.
+            </p>
+            <span class="quote__author">nombre del autor</span>
+        </section>
+        <!-- CTA -->
+        <section class="cta">
+           <div class="cta__box">
+                <div class="cta__content">
+                    <h3 class="cta__title">nombre</h3>
+                    <p class="cta__text">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    </p>
+                </div>
+                <button class="cta__button">Sign up</button>
+           </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <h3 class="footer__title">Copyright The Odin Project 2021</h3>
+    </footer>
 </body>
 </html>
