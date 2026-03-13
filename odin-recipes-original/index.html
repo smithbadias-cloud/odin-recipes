@@ -13,8 +13,12 @@
 <body>
     <header class="header">
         <nav class="navbar">
-            <a href="index.html" class="navbar__container">
-                <img class="navbar__logo" src="recipies/image/logo.ico" alt="logo">
+            <a class="navbar__logo-link" href="index.html">
+                <picture>
+                    <source media="(min-width: 700px)" srcset="recipies/image/logo.webp">
+                    <!-- móviles -->
+                    <img class="info__img" loading="lazy" src="recipies/image/logo.ico" alt="logo">
+                </picture>
             </a>
             <ul class="navbar__list">
                 <li class="navbar__item">
@@ -50,7 +54,11 @@
                 <button class="hero__button">Sign up</button>
             </div>
             <div class="hero__media">
-                <img class="hero__image" src="recipies/image/lasagna.webp" alt="recetas">
+                <picture class="hero__image">
+                    <source media="(min-width: 1350px)" srcset="recipies/image/lasagna.webp">
+                    <!-- móviles -->
+                    <img class="info__img" loading="lazy" src="recipies/image/lasagna-600px.webp" alt="logo">
+                </picture>
             </div>
         </article>
     </header>
@@ -62,7 +70,11 @@
                 <article class="info__card">
                     <a class="info__link" href="#">
                         <div class="info__image-box">
-                            <img class="info__image" src="recipies/image/lasagna.webp" alt="">
+                            <picture class="hero__image">
+                                <source media="(min-width: 700px)" srcset="recipies/image/pollo-a-la-brasa.webp">
+                                <!-- móviles -->
+                                <img class="info__img" loading="lazy" src="recipies/image/pollo-a-la-brasa-600px.webp" alt="logo">
+                            </picture>
                         </div>
                         <p class="info__text">
                             Lorem ipsum dolor sit.
@@ -72,7 +84,11 @@
                 <article class="info__card">
                     <a class="info__link" href="#">
                         <div class="info__image-box">
-                            <img class="info__image" src="recipies/image/lasagna.webp" alt="">
+                            <picture class="hero__image">
+                                <source media="(min-width: 700px)" srcset="recipies/image/pollo-a-la-brasa.webp">
+                                <!-- móviles -->
+                                <img class="info__img" loading="lazy" src="recipies/image/pollo-a-la-brasa-600px.webp" alt="logo">
+                            </picture>
                         </div>
                         <p class="info__text">
                             Lorem ipsum dolor sit.
@@ -82,7 +98,11 @@
                 <article class="info__card">
                     <a class="info__link" href="#">
                         <div class="info__image-box">
-                            <img class="info__image" src="recipies/image/lasagna.webp" alt="">
+                            <picture class="hero__image">
+                                <source media="(min-width: 700px)" srcset="recipies/image/pollo-a-la-brasa.webp">
+                                <!-- móviles -->
+                                <img class="info__img" loading="lazy" src="recipies/image/pollo-a-la-brasa-600px.webp" alt="logo">
+                            </picture>
                         </div>
                         <p class="info__text">
                             Lorem ipsum dolor sit.
@@ -92,7 +112,11 @@
                 <article class="info__card">
                     <a class="info__link" href="#">
                         <div class="info__image-box">
-                            <img class="info__image" src="recipies/image/lasagna.webp" alt="">
+                            <picture class="hero__image">
+                                <source media="(min-width: 700px)" srcset="recipies/image/pollo-a-la-brasa.webp">
+                                <!-- móviles -->
+                                <img class="info__img" loading="lazy" src="recipies/image/pollo-a-la-brasa-600px.webp" alt="logo">
+                            </picture>
                         </div>
                         <p class="info__text">
                             Lorem ipsum dolor sit.
