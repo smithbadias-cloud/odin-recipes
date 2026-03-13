@@ -11,8 +11,12 @@
     <body>
         <header class="header">
             <nav class="navbar">
-                <a class="navbar__logo-link" href="../index.html" class="navbar__container">
-                    <img class="navbar__logo" src="../recipies/image/logo.ico" alt="logo">
+                <a class="navbar__logo-link" href="../index.html">
+                    <picture>
+                        <source media="(min-width: 1350px)" srcset="image/logo.webp">
+                        <!-- móviles -->
+                        <img class="info__img" loading="lazy" src="image/logo.ico" alt="logo">
+                    </picture>
                 </a>
                 <ul class="navbar__list">
                     <li class="navbar__item">
@@ -39,9 +43,13 @@
         <main class="recipe">
             <h1 class="recipe__title">Arroz Cremoso de Hongos y Pollo</h1>
             <div class="recipe__image-container">
-                <img class="recipe__image" src="image/arroz-cremoso-de-hongos-y-pollo.webp" alt="Receta de Arroz con Vegetales al Vapor">
+                <picture class="recipe__picture">
+                    <source media="(min-width: 1350px)" srcset="image/arroz-cremoso-de-hongos-y-pollo.webp">
+                    <!-- móviles -->
+                    <img class="recipe__image" loading="lazy" src="image/arroz-cremoso-de-hongos-y-pollo-600px.webp" alt="logo">
+                </picture>
             </div>
-            <h3 class="recipe__name">Descripción</h3>
+            <h3 class="recipe__name name--description">Descripción</h3>
             <p class="recipe__text">
                 El Arroz Cremoso de Pollo y Hongos es una preparación que destaca por su textura aterciopelada y su profundo perfil de sabor "umami". Se trata de un plato donde la suavidad del arroz, cocido lentamente hasta alcanzar una consistencia similar a la de un risotto, abraza trozos de pollo jugosos y tiernos.
             </p>
@@ -65,7 +73,7 @@
             <ul class="recipe__list recipe--steps">
                 <li class="recipe__item recipe--item">
                     <span class="recipe__enhance">Paso 1:</span>
-                    <p class="recipe__text">
+                    <p class="recipe__text recipe--text">
                         Sazona el pollo con la cucharada de Sazón Completo Maggi y aparta.
                     </p>
                 </li>
@@ -83,13 +91,13 @@
                 </li>
                 <li class="recipe__item recipe--item">
                     <span class="recipe__enhance">Paso 4:</span>
-                    <p class="recipe__text">
+                    <p class="recipe__text recipe--text">
                         Termina agregando queso parmesano y puerro fino picadito.
                     </p>
                 </li>
                 <li class="recipe__item recipe--item">
                     <span class="recipe__enhance">Paso 5:</span>
-                    <p class="recipe__text">
+                    <p class="recipe__text recipe--text">
                         Sirve de inmediato.
                     </p>
                 </li>

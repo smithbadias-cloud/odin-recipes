@@ -11,8 +11,12 @@
     <body>
         <header class="header">
             <nav class="navbar">
-                <a class="navbar__logo-link" href="../index.html" class="navbar__container">
-                    <img class="navbar__logo" src="../recipies/image/logo.ico" alt="logo">
+                <a class="navbar__logo-link" href="../index.html">
+                    <picture>
+                        <source media="(min-width: 1350px)" srcset="image/logo.webp">
+                        <!-- móviles -->
+                        <img class="info__img" loading="lazy" src="image/logo.ico" alt="logo">
+                    </picture>
                 </a>
                 <ul class="navbar__list">
                     <li class="navbar__item">
@@ -39,7 +43,11 @@
         <main class="recipe">
             <h1 class="recipe__title">Pasta con Queso y Hongos</h1>
             <div class="recipe__image-container">
-                <img class="recipe__image" src="image/pasta-con-queso-y-hongos.webp" alt="Receta de Arroz con Vegetales al Vapor">
+                <picture class="recipe__picture">
+                    <source media="(min-width: 1350px)" srcset="image/pasta-con-queso-y-hongos.webp">
+                    <!-- móviles -->
+                    <img class="recipe__image" loading="lazy" src="image/pasta-con-queso-y-hongos-600px.webp" alt="logo">
+                </picture>
             </div>
             <h3 class="recipe__name">Descripción</h3>
             <p class="recipe__text">
