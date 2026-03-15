@@ -14,11 +14,7 @@
     <header class="header">
         <nav class="navbar">
             <a class="navbar__logo-link" href="index.html">
-                <picture>
-                    <source media="(min-width: 700px)" srcset="recipies/image/logo.webp">
-                    <!-- móviles -->
-                    <img class="info__img" loading="lazy" src="recipies/image/logo.ico" alt="logo">
-                </picture>
+                <img class="navbar__logo" src="recipies/image/logo.ico" alt="Logo">
             </a>
             <ul class="navbar__list">
                 <li class="navbar__item">
@@ -55,7 +51,7 @@
             </div>
             <div class="hero__media">
                 <picture class="hero__image">
-                    <source media="(min-width: 1350px)" srcset="recipies/image/lasagna.webp">
+                    <source media="(min-width: 700px)" srcset="recipies/image/lasagna.webp">
                     <!-- móviles -->
                     <img class="info__img" loading="lazy" src="recipies/image/lasagna-600px.webp" alt="logo">
                 </picture>
@@ -127,11 +123,13 @@
         </section>
         <!-- SECCIÓN CITA -->
         <section class="quote">
-            <p class="quote__text">
+            <div class="quote__container">
+                <p class="quote__text">
                 "Aprendan a cocinar, prueben nuevas recetas, aprendan de sus errores, no tengan miedo y, sobre todo,
                 diviértanse."
-            </p>
-            <span class="quote__author">Julia Child.</span>
+                </p>
+                <span class="quote__author">Julia Child.</span>
+            </div>
         </section>
         <!-- CTA -->
         <section class="cta">
