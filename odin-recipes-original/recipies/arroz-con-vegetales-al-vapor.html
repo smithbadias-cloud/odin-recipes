@@ -12,7 +12,12 @@
         <header class="header">
             <nav class="navbar">
                 <a class="navbar__logo-link" href="../index.html">
-                    <img class="navbar__logo" loading="lazy" src="image/logo.ico" alt="logo">
+                    <picture class="navbar__image">
+                        <source media="(min-width: 1350px)" srcset="image/logo.webp">
+                        <!-- móviles -->
+                        <img class="navbar__logo" src="image/logo.ico" alt="Logo">
+                </picture>
+                </picture>
                 </a>
                 <ul class="navbar__list">
                     <li class="navbar__item">
@@ -67,13 +72,13 @@
             <ul class="recipe__list recipe--steps">
                 <li class="recipe__item recipe--item">
                     <span class="recipe__enhance">Paso 1:</span>
-                    <p class="recipe__text">
+                    <p class="recipe__text recipe--text">
                         Vierte el aceite en una olla de fondo grueso. Saltea por 3 minutos el ajo, la cebolla, los pimientos, la zanahoria, la tayota, el puerro y el apio.
                     </p>
                 </li>
                 <li class="recipe__item recipe--item">
                     <span class="recipe__enhance">Paso 2:</span>
-                    <p class="recipe__text">
+                    <p class="recipe__text recipe--text">
                         Agrega el resto de los ingredientes, mezcla bien y deja hervir, tapa, reduce fuego y cocina de 15 a 20 minutos. Sirve de inmediato.
                     </p>
                 </li>

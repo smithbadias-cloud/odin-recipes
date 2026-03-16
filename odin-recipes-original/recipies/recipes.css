@@ -42,6 +42,7 @@ a{text-decoration:none}
 @media (min-width:1350px) {
     /* NAVBAR */
     .navbar{justify-content:space-between;padding:25px 11em}
+    .navbar__logo{width:100px}
     .navbar__list{gap:3em}
     .navbar__link:hover .navbar__text{color:var(--background)}
     .navbar__text{transition:.2s ease color;text-wrap:balance}
