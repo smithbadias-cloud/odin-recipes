@@ -14,7 +14,11 @@
     <header class="header">
         <nav class="navbar">
             <a class="navbar__logo-link" href="index.html">
-                <img class="navbar__logo" src="recipies/image/logo.ico" alt="Logo">
+                <picture class="navbar__image">
+                    <source media="(min-width: 1350px)" srcset="recipies/image/logo.webp">
+                    <!-- móviles -->
+                    <img class="navbar__logo" src="recipies/image/logo.ico" alt="Logo">
+                </picture>
             </a>
             <ul class="navbar__list">
                 <li class="navbar__item">
