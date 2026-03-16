@@ -1,4 +1,4 @@
 # odin-recipes
-Pagina de Recetas Odin - Modificado a mi antojo.
+Odin Recipe Page - Modified to my liking.
 
-OJO: Todavia esta en proceso. Solo se visualiza en resoluciones mobiles
+NOTE: This is still under development. It is only viewable on mobile resolutions.
