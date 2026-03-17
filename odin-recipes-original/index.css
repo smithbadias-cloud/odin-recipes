@@ -2,6 +2,8 @@
 body{margin:0;padding:0;min-height:100dvh;font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;display:flex;flex-direction:column}
 h1,h2,h3,ul,p{margin:0;padding:0}
 img{max-width:100%;height:auto}
+li{list-style:none}
+a{text-decoration:none}
 button{padding:20px;width:clamp(150px, 20vw, 200px);background-color:var(--background);border:none;font-size:clamp(16px, 2vw, 25px);color:var(--color-title);font-weight:900;cursor:pointer}
 /* NAVBAR */
 .navbar{width:100%;position:fixed;top:0;z-index:10;display:flex;justify-content:center;align-items:center;gap:2em;padding:25px;box-shadow:5px 8px 10px #0008;background-color:var(--background-color);flex-wrap:wrap;animation: 1s ease aparecer both}
@@ -10,7 +12,7 @@ button{padding:20px;width:clamp(150px, 20vw, 200px);background-color:var(--backg
 .navbar__list{display:flex;list-style:none;gap:2em;align-items:center;text-align:center}
 .navbar__link{text-decoration:none}
 .navbar__text{color:var(--color-title);font-weight:900}
-.navbar__text, .hero__button, .info__text, .cta__text, .cta__button, .footer{font-size:14px}
+.navbar__text, .hero__button, .recipe__text, .recipe__item, .info__text, .cta__text, .cta__button, .footer{font-size:14px}
 /* HERO */
 .hero{display:flex;flex-direction:column;gap:3em;padding:16em 2em 5em;min-height:100dvh;background-color: var(--background-color)}
 .hero__container{display:flex;flex-direction:column;gap:1em}
@@ -45,6 +47,25 @@ button{padding:20px;width:clamp(150px, 20vw, 200px);background-color:var(--backg
 .cta__box{display:flex;flex-direction:column;gap:10px}
 .cta__author, .cta__text, .cta__button{animation-name:aparecer;animation-duration: 1ms;animation-timeline:view();animation-range:entry 10% cover 40%}
 .cta__button{border:2px solid;border-color:var(--color-title)}
+/*SECCION RECETAS AL DAR CLIC A LAS RECETAS*/
+/* RECIPE */
+.recipe{margin:0 3em;padding:16em 0 5em;display:flex;flex-direction:column;gap:2em;animation: 2s 1s ease aparecer both;color:var(--background-color)}
+.recipe__title{font-size:28px}
+.recipe__title, .recipe__name, .recipe__enhance, .recipe__item{text-align:center}
+.recipe__name{text-decoration:underline;font-size:20px}
+.recipe__section{display:flex;flex-direction:column;flex-wrap:wrap;gap:2em}
+.recipe__description{display:flex;flex-direction: column;gap: 1em}
+.recipe__image-container{display:flex;margin:auto}
+.recipe__picture, .recipe__image{margin:auto;box-shadow:5px 8px 10px #0008;border-radius:10px}
+.recipe--ingredients{display:flex;flex-direction:column;gap:1em}
+.recipe--ingredients .recipe__item{text-wrap:balance}
+.recipe--steps{display:flex;flex-direction:column;gap:2em}
+.recipe--item{display:flex;flex-direction:column;gap:1em}
+.recipe__enhance{font-size:16px}
+.enhance--steps{text-align:center}
+.recipe__text{text-align:justify}
+.recipe--text{text-align:center}
+.recipe--item:last-child .recipe--text{text-align:center}
 /* FOOTER */
 .footer{background-color:var(--background-color);color:var(--color-title);text-align:center;padding:3em 2em}
 /* KEYFRAMES */
@@ -85,5 +106,14 @@ button{padding:20px;width:clamp(150px, 20vw, 200px);background-color:var(--backg
     .quote, .cta{animation-range: entry 10% cover 40%}
     .quote__text{font-size:36px}
     .cta__title{font-size:28px}
-    
+    /* SECCION RECETAS AL DAR CLIC A LAS RECETAS */
+    /* RECIPE */
+    .recipe__image-container{width:1000px}
+    .recipe{margin:5em 15em;padding:8em 0 5em;display:flex;flex-direction:column;gap:2em}
+    .recipe__title{font-size:48px}
+    .recipe__text, .recipe__item{font-size:22px}
+    .recipe__name{padding:1em 0 0;font-size:30px}
+    .recipe__enhance{font-size:25px}
+    .name--description{padding: 2em 0 0}
 }
+
