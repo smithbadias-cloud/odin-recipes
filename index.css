@@ -1,0 +1,119 @@
+:root{--color-title:#f9faf8;--color-text:#e5e7eb;--background:#3882f6;--background-color:#1f2937}
+body{margin:0;padding:0;min-height:100dvh;font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;display:flex;flex-direction:column}
+h1,h2,h3,ul,p{margin:0;padding:0}
+img{max-width:100%;height:auto}
+li{list-style:none}
+a{text-decoration:none}
+button{padding:20px;width:clamp(150px, 20vw, 200px);background-color:var(--background);border:none;font-size:clamp(16px, 2vw, 25px);color:var(--color-title);font-weight:900;cursor:pointer}
+/* NAVBAR */
+.navbar{width:100%;position:fixed;top:0;z-index:10;display:flex;justify-content:center;align-items:center;gap:2em;padding:25px;box-shadow:5px 8px 10px #0008;background-color:var(--background-color);flex-wrap:wrap;animation: 1s ease aparecer both}
+.navbar, .hero, .info, .quote, .cta, .footer{box-sizing:border-box}
+.navbar__logo{max-width:100%;height:auto;cursor:pointer}
+.navbar__list{display:flex;list-style:none;gap:2em;align-items:center;text-align:center}
+.navbar__link{text-decoration:none}
+.navbar__text{color:var(--color-title);font-weight:900}
+.navbar__text, .hero__button, .recipe__text, .recipe__item, .info__text, .cta__text, .cta__button, .footer{font-size:14px}
+/* HERO */
+.hero{display:flex;flex-direction:column;gap:3em;padding:16em 2em 5em;min-height:100dvh;background-color: var(--background-color)}
+.hero__container{display:flex;flex-direction:column;gap:1em}
+.hero__title{color:var(--color-title);font-weight:900;text-align:center;animation:2s 1s ease aparecer both;font-size:28px}
+.hero__text{color:var(--color-text);text-wrap:balance;line-height:2;text-align:justify;animation: 2s 2s ease aparecer both}
+.hero__button{margin-top:20px;align-self:center;animation: 2s 3s ease aparecer both}
+.hero__button, .info__img, .hero__image, .info__image-box, .info__image, .quote, .cta__container, .cta__button{border-radius:8px}
+.hero__media{margin:auto;animation: 2s 4s ease aparecer both}
+.hero__button, .hero__image, .info__image, .cta__button{box-shadow:5px 8px 10px #0008}
+/* SECCION INFO */
+.info{display:flex;flex-direction:column;gap:4em}
+.info, .quote, .cta, .footer{padding:5em 2em}
+.info__title{color:var(--background-color);font-weight:900;text-align:center}
+.info__grid{display:flex;justify-content:center;gap:3em;flex-wrap:wrap}
+.info__card{display:flex;flex-direction:column;text-align:center;width:clamp(320px, 90vw, 1200px)}
+.info__link{display:flex;flex-direction:column;gap:2em;text-decoration:none}
+.info__image-box{display:flex;justify-content:center}
+.info__image{max-width:100%;height:auto}
+.info__title, .cta__title{font-size:18px}
+.info__text{color:#000;animation-name: aparecer;animation-duration: 1ms;animation-timeline: view();animation-range: entry 0% cover 35%}
+.info{animation-name: aparecer;animation-duration: 1ms;animation-timeline: view();animation-range: entry 10% cover 20%}
+.info__card{animation-name: aparecer;animation-duration: 1ms;animation-timeline: view();animation-range: entry 0% cover 35%}
+/* SECCION CITA */
+.quote{background-color:var(--color-text)}
+.quote, .cta{animation-name: aparecer;animation-duration: 1ms;animation-timeline: view();animation-range: entry 0% cover 20%}
+.quote__container{display:flex;flex-direction:column;gap:2em;text-align:center}
+.quote__container, .cta__container{animation-name:aparecer;animation-duration: 1ms;animation-timeline:view();animation-range:entry 10% cover 40%}
+.quote__text{color:var(--background-color);font-weight:300;width:100%;font-size:18px;animation-name: aparecer;animation-duration: 1ms;animation-timeline: view();animation-range: entry 0% cover 20%}
+.quote__author{font-weight:900;font-size:16px;align-self:end;padding-right:4em;animation-name: aparecer;animation-duration: 1ms;animation-timeline: view();animation-range: entry 0% cover 20%}
+/* SECCION CTA */
+.cta__container{width:80%;color:var(--color-title);background-color:var(--background);padding:2em 2em 3em;margin:auto;display:flex;flex-direction:column;gap:2em;align-items:center;text-align:center}
+.cta__box{display:flex;flex-direction:column;gap:10px}
+.cta__author, .cta__text, .cta__button{animation-name:aparecer;animation-duration: 1ms;animation-timeline:view();animation-range:entry 10% cover 40%}
+.cta__button{border:2px solid;border-color:var(--color-title)}
+/*SECCION RECETAS AL DAR CLIC A LAS RECETAS*/
+/* RECIPE */
+.recipe{margin:0 3em;padding:16em 0 5em;display:flex;flex-direction:column;gap:2em;animation: 2s 1s ease aparecer both;color:var(--background-color)}
+.recipe__title{font-size:28px}
+.recipe__title, .recipe__name, .recipe__enhance, .recipe__item{text-align:center}
+.recipe__name{text-decoration:underline;font-size:20px}
+.recipe__section{display:flex;flex-direction:column;flex-wrap:wrap;gap:2em}
+.recipe__description{display:flex;flex-direction: column;gap: 1em}
+.recipe__image-container{display:flex;margin:auto}
+.recipe__picture, .recipe__image{margin:auto;box-shadow:5px 8px 10px #0008;border-radius:10px}
+.recipe--ingredients{display:flex;flex-direction:column;gap:1em}
+.recipe--ingredients .recipe__item{text-wrap:balance}
+.recipe--steps{display:flex;flex-direction:column;gap:2em}
+.recipe--item{display:flex;flex-direction:column;gap:1em}
+.recipe__enhance{font-size:16px}
+.enhance--steps{text-align:center}
+.recipe__text{text-align:justify}
+.recipe--text{text-align:center}
+.recipe--item:last-child .recipe--text{text-align:center}
+/* FOOTER */
+.footer{background-color:var(--background-color);color:var(--color-title);text-align:center;padding:3em 2em}
+/* KEYFRAMES */
+@keyframes aparecer{
+    from{opacity:0;transform:translateY(100px)}
+    to{opacity:1;transform:translateY(0)}
+}
+/* MEDIA QUERIES */
+/* 1350PX */
+@media (min-width:1350px) {
+    /* NAVBAR */
+    .navbar{justify-content:space-between;padding:25px 11em}
+    .navbar__logo{width:100px}
+    .navbar__list{gap:3em}
+    .navbar__link:hover .navbar__text{color:var(--background)}
+    .navbar__text{transition:.2s ease color}
+    .navbar__text, .hero__button, .info__text, .cta__text{font-size:18px}
+    .hero__text{width:550px}
+    .hero{flex-direction:row;gap:2em;padding:13em 10em 7em}
+    .hero__container{justify-content:center}
+    .hero__title{font-size:48px}
+    .hero__media{width:700px}
+    button{transition:.2s ease scale, .2s ease background-color, .2s ease color, .2s ease font-size, .2s ease border, .2s ease box-shadow}
+    .hero__button:active, .cta__button:active{scale:1;background-color:var(--background);color:var(--color-text);box-shadow:5px 8px 10px #0008}
+    button:hover{scale:.9;background-color:var(--color-title);color:var(--background);box-shadow:none}
+    /* INFO */
+    .info__grid{flex-wrap:nowrap;gap:3em;width:100%;margin:auto}
+    .info__link{transition:.2s ease scale;gap:1.2em}
+    .info__link:hover{scale:1.1}
+    .info__link:hover .info__text{transition: .2s ease font-size, .2s ease color, .2s ease font-weight;color:var(--background);font-weight:900}
+    .info__title{font-size:36px}
+    .info__image-box{position:relative;transition:.2s ease background-color, .2s ease border-radius, .2s ease visibility}
+    .info__image-box::before{content:"";position:absolute;inset:0;background-color:#0002;border-radius:10px;visibility:hidden}
+    .info__link:hover .info__image-box::before{visibility:visible}
+    .info, .quote__container, .cta{margin:0 14em}
+    .info{animation-range: entry 10% cover 40%}
+    .info__grid{animation-name:aparecer;animation-duration: 1ms;animation-timeline:view();animation-range:entry 10% cover 40%}
+    .quote, .cta{animation-range: entry 10% cover 40%}
+    .quote__text{font-size:36px}
+    .cta__title{font-size:28px}
+    /* SECCION RECETAS AL DAR CLIC A LAS RECETAS */
+    /* RECIPE */
+    .recipe__image-container{width:1000px}
+    .recipe{margin:5em 15em;padding:8em 0 5em;display:flex;flex-direction:column;gap:2em}
+    .recipe__title{font-size:48px}
+    .recipe__text, .recipe__item{font-size:22px}
+    .recipe__name{padding:1em 0 0;font-size:30px}
+    .recipe__enhance{font-size:25px}
+    .name--description{padding: 2em 0 0}
+}
+
